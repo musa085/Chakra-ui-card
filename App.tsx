@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card } from '@chakra-ui/react'
 import { Avatar } from './components/ui/avatar'
-
+import './App.css'
 const characters = [
   { id: 1, name: "Rick Sanchez", species: "Human", status: "Alive" },
   { id: 2, name: "Morty Smith", species: "Human", status: "Alive" },
@@ -26,11 +26,11 @@ const characters = [
 ]
 
 const CharacterCard = ({id, name, species, status}) => (
-  <Card.Root width="520px" margin="30px">
+  <Card.Root width="420px" margin="30px">
       <Card.Body gap="2">
         <Avatar
           boxSize="200px"
-          marginLeft="130px"
+          marginLeft="100px"
           src={`https://rickandmortyapi.com/api/character/avatar/${id}.jpeg`}
           
         />
